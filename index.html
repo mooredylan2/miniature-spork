@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>EMR</h1>
+  <p>Emergency Management and Resposne, assiting patients seeking immediate care.</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Home</a>
+  <a href="https://www.google.com/search?q=nearest+urgent+care&rlz=1C1SQJL_enUS905US905&oq=nearest+&aqs=chrome.0.0i20i263i433i512j69i57j0i433i512l6j0i512j0i433i512.1544j0j7&sourceid=chrome&ie=UTF-8&dlnr=1&sei=U5HTYb6eIb61qtsPrd6euAk">Nearest Urgent Care</a>
+  <a href="https://www.google.com/search?q=nearest+emergency+room&rlz=1C1SQJL_enUS905US905&oq=Nearest+Emergency+Room&aqs=chrome.0.0i433i457i512j0i512l9.1158j0j9&sourceid=chrome&ie=UTF-8">Nearest Emergency Room</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>Health Resources</h2>
+  <a href="https://www.google.com/search?q=nearest+urgent+care&rlz=1C1SQJL_enUS905US905&oq=nearest+&aqs=chrome.0.0i20i263i433i512j69i57j0i433i512l6j0i512j0i433i512.1544j0j7&sourceid=chrome&ie=UTF-8&dlnr=1&sei=U5HTYb6eIb61qtsPrd6euAk"> Recent healthcare articles </a>,
+  
+    <a href="  https://www.usnews.com/topics/subjects/health-care"> US Health Today </a>
+  </div>
+  
+  <div class="column middle">
+    <h2>About EMR </h2>
+    <p> Emergency Management and Response (EMR) is an interactive website that assist patient with obtain urgent or emergent care without having to wait for endless hours in a Hospital. Health Hero also have a dedicated staff of medical professionals to assist with care prior to seeking care to help define the care that is needed.
+</p>
+  </div>
+  
+  <div class="column side">
+    <h2>Immediate Assistance</h2>
+    <p>Please click the link below to obtain immediate assistance.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Emergency Management and Resposne (EMR). LLC </p>
+</div>
+  
+</body>
+</html>
+
+
